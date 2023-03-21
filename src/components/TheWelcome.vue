@@ -73,7 +73,7 @@ export default {
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
         <div class="lg:hidden" role="dialog" aria-modal="true">
-          <!-- Background backdrop, show/hide based on slide-over state. -->
+            <!-- Background backdrop, show/hide based on slide-over state. -->
           <div class="fixed inset-0 z-50"></div>
           <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div class="flex items-center justify-between">
@@ -88,7 +88,7 @@ export default {
                 </svg>
               </button>
             </div>
-            <div class="mt-6 flow-root">
+            <!-- <div class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
                   <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Quem somos</a>
@@ -103,7 +103,7 @@ export default {
                 </div>
                 
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </header>
@@ -164,7 +164,7 @@ export default {
     </div>
     <!--  -->
     <!--  -->
-    <div class="bg-gray-900 py-24 sm:py-32">
+    <div class="bg-blue-900 py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
           <h2 class="text-6xl font-semibold leading-7 text-yellow-400">Web Global</h2>
@@ -215,14 +215,14 @@ export default {
     <!--  -->
     <!--  -->
     <img src="../assets/mundo.jpeg" alt="clientes mundo">
-    <div class="relative isolate overflow-hidden bg-gray-900">
+    <div class="relative isolate overflow-hidden bg-yellow-300">
       <div class="py-24 px-6 sm:px-6 sm:py-32 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
-          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Base no Brasil .<br>Olhos no mundo.</h2>
-          <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Monitoramos e exportamos dados sem fronteiras.</p>
+          <h2 class="text-3xl font-bold tracking-tight text-blue sm:text-4xl">Base no Brasil .<br>Olhos no mundo.</h2>
+          <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-blue">Monitoramos e exportamos dados sem fronteiras.</p>
         </div>
       </div>
-      <svg viewBox="0 0 1024 1024" class="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
+      <!-- <svg viewBox="0 0 1024 1024" class="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
         <circle cx="512" cy="512" r="512" fill="url(#8d958450-c69f-4251-94bc-4e091a323369)" fill-opacity="0.7" />
         <defs>
           <radialGradient id="8d958450-c69f-4251-94bc-4e091a323369">
@@ -231,7 +231,7 @@ export default {
           </radialGradient>
         </defs>
         
-      </svg>
+      </svg> -->
       
     </div>
 
