@@ -86,6 +86,9 @@
 </div>
 <!--  -->
 <!--  -->
+<!--  -->
+<iframe class="block w-full rounded-md px-3.5 py-2.5 text-center text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.318160050954!2d-51.17317052369289!3d-30.027728894370952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519798b7a814615%3A0xce1ce9c203be2b62!2sWebGlobal!5e0!3m2!1spt-BR!2sbr!4v1679421152070!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!--  -->
 <footer class="bg-white">
   <div class="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8">
     <div class="mt-10 flex justify-center space-x-10">
