@@ -15,6 +15,7 @@
 
 <template >
   <div id="template">
+    <img alt="fundo" src= "../assets/fundomundodedados.jpg">
       <div class="bg-white">
       <header class="mt-70 absolute inset-x-0 top-0 z-50">
         <div class="inline-flex">
