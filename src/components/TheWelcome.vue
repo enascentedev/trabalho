@@ -28,12 +28,12 @@ export default {
 
 <template >
   <div id="template">
+  <!-- <div v-if ="fundovisivel" alt="fundo" :style ="{backgroundImage: url('https://www.pwc.com.br/pt/estudos/setores-atividades/produtos-consumo-varejo/2022/tendencias-globais-m-a-grafico.png')}"></div> -->
     <!-- <div v-if ="fundovisivel" class="bg-fixed [url('../assets/fundomundodedados.jpg')]"></div> -->
-    <img v-if ="fundovisivel" alt="fundo" src= "../assets/fundomundodedados.jpg">
+    <header class="image">
+      <img v-if ="fundovisivel" alt="fundo" src= "../assets/fundomundodedados.jpg">
+    
     <!-- <div v-if ="fundovisivel" class="h-screen bg-fixed" style ="background-image: url ('../assets/fundomundodedados.jpg')"></div> -->
-    <button @click="handleclick" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
-        Com dados
-      </button>
       <div class="bg-white">
       <header class="mt-70 absolute inset-x-0 top-0 z-50">
         <div class="inline-flex">
@@ -135,11 +135,13 @@ export default {
                 </a>
               </div>
             </div>
-            <h1 class="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Os dados do seu concorrente na palma da sua mão</h1>
+            <h1 class="mt-8 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Os dados do seu concorrente na palma da sua mão</h1>
             <p class="mt-6 text-lg leading-8 text-gray-600">Acompanhe as movimentações de mercado e monitore as ações do seu concorrente e tenha o melhor preço de venda.</p>
-            <div class="mt-10 flex items-center gap-x-6">
+            <div class="mt-8 flex items-center gap-x-6">
               <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">começar</a>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Saiba<span aria-hidden="true">→</span></a>
+              <button @click="handleclick" class="rounded-md bg-yellow-300 hover:bg-gray-400 text-white shadow-sm hover:bg-indigo-500 font-bold py-2 px-4 rounded-l">
+                  com dados
+              </button>
             </div>
           </div>
           <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
@@ -165,38 +167,43 @@ export default {
     <div class="bg-gray-900 py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
-          <h2 class="text-base font-semibold leading-7 text-indigo-400">Web Global</h2>
-          <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Queremos revolucionar o mercado online através do nosso conhecimento em tecnologia e negócios, democratizando o uso de Big Data para varejistas e fabricantes dos mais variados segmentos e portes.</p>
-          <p class="mt-6 text-lg leading-8 text-gray-300">Através de um sistema online você acessa relatórios, painéis, rankings e gráficos com informações atualizadas, várias vezes ao dia, do seu mercado e concorrência, trazendo agilidade e profundidade para suas análises.</p>
+          <h2 class="text-6xl font-semibold leading-7 text-yellow-400">Web Global</h2>
+          <p class="mt-10 text-3xl font-bold tracking-tight text-white sm:text-4xl">Queremos revolucionar o mercado online através do nosso conhecimento em tecnologia e negócios, democratizando o uso de Big Data para varejistas e fabricantes dos mais variados segmentos e portes.</p>
+          <p class="mt-10 text-3xl font-bold tracking-tight text-white sm:text-4xl">Através de um sistema online você acessa relatórios, painéis, rankings e gráficos com informações atualizadas, várias vezes ao dia, do seu mercado e concorrência, trazendo agilidade e profundidade para suas análises.</p>
         </div>
         <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
             <div class="flex flex-col">
               <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
-                <svg class="h-5 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                  <path d="M21 6.375c0 2.692-4.03 4.875-9 4.875S3 9.067 3 6.375 7.03 1.5 12 1.5s9 2.183 9 4.875z" />
+                  <path d="M12 12.75c2.685 0 5.19-.586 7.078-1.609a8.283 8.283 0 001.897-1.384c.016.121.025.244.025.368C21 12.817 16.97 15 12 15s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.285 8.285 0 001.897 1.384C6.809 12.164 9.315 12.75 12 12.75z" />
+                  <path d="M12 16.5c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 001.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 001.897 1.384C6.809 15.914 9.315 16.5 12 16.5z" />
+                  <path d="M12 20.25c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 001.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 001.897 1.384C6.809 19.664 9.315 20.25 12 20.25z" />
                 </svg>
-                <span class="text-6xl">PARA FABRICANTES</span>
+
+                <span class="text-4xl">PARA FABRICANTES</span>
               </dt>
               <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
                 <p class="flex-auto text-4xl">Monitorando o mercado, fabricantes preveem os movimentos da concorrência e têm clareza para tomar decisões ágeis e assertivas baseadas em dados.</p>
                 <p class="mt-6">
-                  <a href="https://webprice.com.br/fabricantes/" class="text-sm font-semibold leading-6 text-indigo-400">Saiba mais <span aria-hidden="true">→</span></a>
+                  <a href="https://webprice.com.br/fabricantes/" class="text-2xl font-semibold leading-6 text-blue-400">Saiba mais <span aria-hidden="true">→</span></a>
                 </p>
               </dd>
             </div>
 
             <div class="flex flex-col">
               <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
-                <svg class="h-5 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+                <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path clip-rule="evenodd" fill-rule="evenodd" d="M5.478 5.559A1.5 1.5 0 016.912 4.5H9A.75.75 0 009 3H6.912a3 3 0 00-2.868 2.118l-2.411 7.838a3 3 0 00-.133.882V18a3 3 0 003 3h15a3 3 0 003-3v-4.162c0-.299-.045-.596-.133-.882l-2.412-7.838A3 3 0 0017.088 3H15a.75.75 0 000 1.5h2.088a1.5 1.5 0 011.434 1.059l2.213 7.191H17.89a3 3 0 00-2.684 1.658l-.256.513a1.5 1.5 0 01-1.342.829h-3.218a1.5 1.5 0 01-1.342-.83l-.256-.512a3 3 0 00-2.684-1.658H3.265l2.213-7.191z"></path>
+                  <path clip-rule="evenodd" fill-rule="evenodd" d="M12 2.25a.75.75 0 01.75.75v6.44l1.72-1.72a.75.75 0 111.06 1.06l-3 3a.75.75 0 01-1.06 0l-3-3a.75.75 0 011.06-1.06l1.72 1.72V3a.75.75 0 01.75-.75z"></path>
                 </svg>
-                <span class="text-6xl">PARA LOJISTAS</span>
+                <span class="text-4xl">PARA LOJISTAS</span>
               </dt>
-              <dd class="mt-10 flex flex-auto flex-col text-base leading-7 text-gray-300">
+              <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
                 <p class="flex-auto text-4xl">Acessando informações de forma automática, empresas do varejo identificam quais e como players do mesmo segmento anunciam determinados produtos por categoria.</p>
                 <p class="mt-6">
-                  <a href="https://webprice.com.br/lojistas/" class="text-sm font-semibold leading-6 text-indigo-400">saiba mais <span aria-hidden="true">→</span></a>
+                  <a href="https://webprice.com.br/lojistas/" class="text-2xl font-semibold leading-6 text-blue-400">saiba mais <span aria-hidden="true">→</span></a>
                 </p>
               </dd>
             </div>
@@ -213,10 +220,6 @@ export default {
         <div class="mx-auto max-w-2xl text-center">
           <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Base no Brasil .<br>Olhos no mundo.</h2>
           <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Monitoramos e exportamos dados sem fronteiras.</p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
-          </div>
         </div>
       </div>
       <svg viewBox="0 0 1024 1024" class="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
@@ -240,9 +243,9 @@ export default {
         
         <div class="flex justify-between">
           <div class="">
-            <p>Endereço:</p>
-            <p>Rua Valdir Antônio Lopes, nº 221, 3º e</p>
-            <p>4º andar</p>
+            <p>Endereço</p>
+            <p>Rua Valdir Antônio Lopes, nº 221 </p>
+            <p>1º, 3º e 4º andar</p>
             <p>Porto Alegre/RS CEP: 91330-000</p>
             
           </div>
@@ -254,35 +257,20 @@ export default {
             
           </div>
           <div class="flex justify-center space-x-6 md:order-2">
-          <a href="#" class="text-gray-400 hover:text-gray-500">
+          <a href="https://www.facebook.com/webglobalbr" class="text-gray-400 hover:text-gray-500">
             <span class="sr-only">Facebook</span>
             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
             </svg>
           </a>
 
-          <a href="#" class="text-gray-400 hover:text-gray-500">
+          <a href="https://www.instagram.com/webglobalbr/" class="text-gray-400 hover:text-gray-500">
             <span class="sr-only">Instagram</span>
             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
             </svg>
           </a>
-
-          <a href="#" class="text-gray-400 hover:text-gray-500">
-            <span class="sr-only">Twitter</span>
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-            </svg>
-          </a>
-
-          <a href="#" class="text-gray-400 hover:text-gray-500">
-            <span class="sr-only">GitHub</span>
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-            </svg>
-          </a>
-
-          <a href="#" class="text-gray-400 hover:text-gray-500">
+          <a href="https://www.youtube.com/channel/UCpv7O-ow1mQwGZ-yi88aRZQ/featured" class="text-gray-400 hover:text-gray-500">
             <span class="sr-only">YouTube</span>
             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
@@ -293,7 +281,17 @@ export default {
       </div>
     </footer>
     <!--  -->
-
-  </div>
-
+  </header>
+    </div>
+  
 </template>
+
+ <style scoped>
+header .image {
+  
+  background-image: url(../assets/fundomundodedados.jpg);
+  background-size: cover;
+  background-position: center;
+}
+  
+</style> 
