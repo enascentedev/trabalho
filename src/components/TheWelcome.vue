@@ -1,4 +1,17 @@
-<script setup>
+<script>
+export default {
+  data() {
+    return {
+      fundovisivel: false
+    }
+  },
+  methods: {
+    handleclick() {
+      this.fundovisivel = !this.fundovisivel;
+    }
+  }
+}
+
 //   createApp() {
 //   let teste = document.getElementById("teste"); 
 //   let semteste = document.getElementById("semteste");
@@ -15,16 +28,21 @@
 
 <template >
   <div id="template">
-    <img alt="fundo" src= "../assets/fundomundodedados.jpg">
+    <!-- <div v-if ="fundovisivel" class="bg-fixed [url('../assets/fundomundodedados.jpg')]"></div> -->
+    <img v-if ="fundovisivel" alt="fundo" src= "../assets/fundomundodedados.jpg">
+    <!-- <div v-if ="fundovisivel" class="h-screen bg-fixed" style ="background-image: url ('../assets/fundomundodedados.jpg')"></div> -->
+    <button @click="handleclick" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+        Com dados
+      </button>
       <div class="bg-white">
       <header class="mt-70 absolute inset-x-0 top-0 z-50">
         <div class="inline-flex">
-      <button id="teste" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+      <!-- <button id="teste" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
         Com dados
       </button>
       <button id="semteste" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
         Sem dados
-      </button>
+      </button> -->
       </div>
         <nav class="flex items-center justify-between" aria-label="Global">
           <a href="#" class="text-2xl font-semibold leading-6 text-gray-900">Quem somos</a>
