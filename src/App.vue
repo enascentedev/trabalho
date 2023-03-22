@@ -1,25 +1,26 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="@/assets/logowebglobal.svg" width="125" height="125" /> -->
-    <img class="h-200 w-200" src="https://webglobal.com.br/carreiras/wp-content/uploads/2022/09/logo-webglobal.png" alt="">
+  <div>
+    <header>
+      <!-- <img alt="Vue logo" class="logo" src="@/assets/logowebglobal.svg" width="125" height="125" /> -->
+      <img class="h-200 w-200" src="https://webglobal.com.br/carreiras/wp-content/uploads/2022/09/logo-webglobal.png" alt="">
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <div class="wrapper">
+        <HelloWorld msg="You did it!" />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">Contato</RouterLink>
-      </nav>
-     
-    </div>
-  </header>
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">Contato</RouterLink>
+        </nav>
+      
+      </div>
+    </header>
 
-  <RouterView />
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
