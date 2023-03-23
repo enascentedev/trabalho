@@ -28,7 +28,7 @@ export default {
     
     <!-- <div v-if ="fundovisivel" class="h-screen bg-fixed" style ="background-image: url ('../assets/fundomundodedados.jpg')"></div> -->
       <div :style="image">
-          <header class="mt-50 top-5 z-80">
+          <header class="mt-50 top-5 z-40">
             <nav class="flex items-center justify-between" aria-label="Global">
               <img class="h-30 w-200" src="https://master.webtrack.com.br/webprice.com.br/wp-content/uploads/2022/05/WebPriceW-copy-B-300.png" alt="" href="#nome do site ">
                 <a href="#endereço do site " class="text-2xl font-semibold leading-6 text-gray-900">Quem somos</a>
@@ -62,7 +62,7 @@ export default {
             </div>
           </header>
 
-        <div class="relative isolate pt-14">
+        <div class="relative isolate pt-2">
           
           <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-5">
             <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
