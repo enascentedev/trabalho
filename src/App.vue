@@ -6,15 +6,14 @@ import { RouterLink, RouterView } from 'vue-router'
   <div>
     <header>
       <!-- <img alt="Vue logo" class="logo" src="@/assets/logowebglobal.svg" width="125" height="125" /> -->
-      <img class="h-200 w-200" src="https://webglobal.com.br/carreiras/wp-content/uploads/2022/09/logo-webglobal.png" alt="">
+      <!-- <img class="h-200 w-200" src="https://webglobal.com.br/carreiras/wp-content/uploads/2022/09/logo-webglobal.png" alt=""> -->
 
       <div class="wrapper">
-        <HelloWorld msg="You did it!" />
-
-        <nav>
+        
+        <!-- <nav>
           <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">Contato</RouterLink>
-        </nav>
+          <RouterLink to="/contato">Contato</RouterLink>
+        </nav> -->
       
       </div>
     </header>
@@ -26,13 +25,13 @@ import { RouterLink, RouterView } from 'vue-router'
 <style scoped>
 header {
   line-height: 1.5;
-  max-height: 30vh;
-  z-index: 2;
+  max-height: 500vh;
+  z-index: 5;
 }
 
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  /* display; */
+  margin-left: 0px;
 }
 
 nav {
@@ -54,7 +53,6 @@ transition: 0.4s;
 
 nav a {
   display: inline-block;
-  padding: 0 1rem;
   border-left: 1px solid var(--color-border);
 }
 
@@ -66,7 +64,7 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    padding-right: 100%;
   }
 
   .logo {
