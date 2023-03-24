@@ -18,21 +18,30 @@ const router = createRouter({
       component: () => import('../views/contato.vue')
     },
     {
-      path: '/cases',
-      name: 'cases',
+      path: '/clientes',
+      name: 'clientes',
       // route level code-splitting
       // this generates a separate chunk (contato.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/cases.vue')
+      component: () => import('../views/clientes.vue')
     },
 
     {
-      path: '/produtos',
-      name: 'produtos',
+      path: '/conteudos',
+      name: 'conteudos',
       // route level code-splitting
       // this generates a separate chunk (contato.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/produtos.vue')
+      component: () => import('../views/conteudos.vue')
+    },
+
+    {
+      path: '/solucoes',
+      name: 'solucoes',
+      // route level code-splitting
+      // this generates a separate chunk (contato.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/solucoes.vue')
     }
   ]
 })

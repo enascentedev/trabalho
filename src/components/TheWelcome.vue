@@ -31,15 +31,36 @@ export default {
           <header class="mt-50 top-5 z-40">
             <nav class="flex items-center justify-between" aria-label="Global">
               <img class="h-30 w-200" src="https://master.webtrack.com.br/webprice.com.br/wp-content/uploads/2022/05/WebPriceW-copy-B-300.png" alt="" href="#nome do site ">
-                <a href="#endereço do site " class="text-2xl font-semibold leading-6 text-gray-900">Quem somos</a>
+                <a href="#endereço do site " class="text-lg font-semibold leading-6 text-gray-900">Quem somos</a>
 
-                <a href="#" class="text-2xl font-semibold leading-6 text-gray-900"><RouterLink to="/produtos">Produtos</RouterLink></a>
+                <div class="relative inline-block text-left">
+                  <div>
+                    <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="false" aria-haspopup="false">
+                      Soluções
+                      <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div class="py-1" role="none">
+                      <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0"><RouterLink to="/solucoes">Fabricantes</RouterLink></a>
+                      <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0"><RouterLink to="/solucoes">Lojistas</RouterLink></a>
+                      <form method="POST" action="#" role="none"></form>
+                    </div>
+                  </div>
+                </div>
 
-                <a href="#" class="text-2xl font-semibold leading-6 text-gray-900"><RouterLink to="/cases">Cases</RouterLink></a>
+                
 
-                <a href="#" class="text-2xl font-semibold leading-6 text-gray-900"><RouterLink to="/contato">Contato</RouterLink></a >
 
-                <a href="#" class="text-2xl font-semibold leading-6 text-gray-900">Login<span aria-hidden="true">&rarr;</span></a>
+                <a href="#" class="text-lg font-semibold leading-6 text-gray-900"><RouterLink to="/clientes">Clientes</RouterLink></a>
+
+                <a href="#" class="text-lg font-semibold leading-6 text-gray-900"><RouterLink to="/conteudos">Conteúdos</RouterLink></a>
+
+                <a href="#" class="text-lg font-semibold leading-6 text-gray-900"><RouterLink to="/contato">Contato</RouterLink></a >
+
+                <a href="#" class="text-lg font-semibold leading-6 text-gray-900">Área do cliente<span aria-hidden="true">&rarr;</span></a>
 
             </nav>
             <div class="lg:hidden" role="dialog" aria-modal="true">
@@ -64,7 +85,7 @@ export default {
 
         <div class="relative isolate pt-2">
           
-          <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-5">
+          <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-0">
             <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
               <div class="flex">
                 <div class="relative flex items-center gap-x-4 rounded-full py-1 px-4 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
