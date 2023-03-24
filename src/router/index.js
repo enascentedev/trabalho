@@ -45,6 +45,24 @@ const router = createRouter({
     },
 
     {
+      path: '/lojistas',
+      name: 'lojistas',
+      // route level code-splitting
+      // this generates a separate chunk (contato.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/lojistas.vue')
+    },
+
+    {
+      path: '/quemsomos',
+      name: 'quemsomos',
+      // route level code-splitting
+      // this generates a separate chunk (contato.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/quemsomos.vue')
+    },
+
+    {
       path: '/solucoes',
       name: 'solucoes',
       // route level code-splitting

@@ -20,13 +20,6 @@ a,
   /* essa cor está mudando o faça o teste  */
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsl(187, 100%, 37%);
-    /* essa cor está mudando o fundo dos botões principais */
-  }
-}
-
 @media (min-width: 1024px) {
   body {
     display: 0;

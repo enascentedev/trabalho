@@ -1,45 +1,124 @@
 <template>
-    <div class="relative bg-white">
-        <div class="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
-            <div class="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
-            <div class="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
-                <img class="absolute inset-0 h-full w-full bg-gray-50 object-cover" src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=2560&h=3413&&q=80" alt="">
-            </div>
-            </div>
-            <div class="px-6 lg:contents">
-            <div class="mx-auto max-w-2xl pt-16 pb-24 sm:pt-20 sm:pb-32 lg:mr-0 lg:ml-8 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
-                <p class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
-                <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</h1>
-                <p class="mt-6 text-xl leading-8 text-gray-700">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.</p>
-                <div class="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
-                <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.</p>
-                <ul role="list" class="mt-8 space-y-8 text-gray-600">
-                    <li class="flex gap-x-3">
-                    <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
-                    </svg>
-                    <span><strong class="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</span>
-                    </li>
-                    <li class="flex gap-x-3">
-                    <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
-                    </svg>
-                    <span><strong class="font-semibold text-gray-900">SSL certificates.</strong> Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</span>
-                    </li>
-                    <li class="flex gap-x-3">
-                    <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
-                        <path fill-rule="evenodd" d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z" clip-rule="evenodd" />
-                    </svg>
-                    <span><strong class="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</span>
-                    </li>
-                </ul>
-                <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
-                <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
-                <p class="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.</p>
-                </div>
-            </div>
-            </div>
+    <div class="relative isolate bg-blue-400 pt-24 pb-32 sm:pt-32">
+      <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl">
+        <svg viewBox="0 0 1313 771" aria-hidden="true" class="ml-[max(50%,38rem)] w-[82.0625rem]">
+          <path id="bc169a03-3518-42d4-ab1e-d3eadac65edc" fill="url(#85a0eca5-25f1-4ab9-af84-4e2d8d9cdbf3)" d="M360.508 589.796 231.671 770.522 0 498.159l360.508 91.637 232.034-325.485c1.485 150.396 51.235 393.965 238.354 165.069C1064.79 143.261 1002.42-107.094 1171.72 46.97c135.44 123.252 148.51 335.641 138.11 426.428L971.677 339.803l24.062 411.461-635.231-161.468Z" />
+          <defs>
+            <linearGradient id="85a0eca5-25f1-4ab9-af84-4e2d8d9cdbf3" x1="1313.17" x2="-88.881" y1=".201" y2="539.417" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#9089FC" />
+              <stop offset="1" stop-color="#FF80B5" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end">
+        <svg viewBox="0 0 1313 771" aria-hidden="true" class="ml-[-22rem] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] xl:ml-0 xl:mr-[calc(50%-12rem)]">
+          <use href="#bc169a03-3518-42d4-ab1e-d3eadac65edc" />
+        </svg>
+      </div>
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-xl text-center">
+          <h1 class="text-6xl font-semibold leading-8 tracking-tight  text-yellow-400 mb-20">Web global</h1>
+          <p class="mt-2 text-3xl font-bold tracking-tight text-yellow-400 sm:text-4xl">We have worked with thousands of amazing people</p>
         </div>
+        <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+          <figure class="col-span-2 hidden sm:block sm:rounded-2xl sm:bg-white sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
+            <blockquote class="p-12 text-xl font-semibold leading-8 tracking-tight text-gray-900">
+              <p>{{ `“${featuredTestimonial.body}”` }}</p>
+            </blockquote>
+            <figcaption class="flex items-center gap-x-4 border-t border-gray-900/10 py-4 px-6">
+              <img class="h-10 w-10 flex-none rounded-full bg-gray-50" :src="featuredTestimonial.author.imageUrl" alt="" />
+              <div class="flex-auto">
+                <div class="font-semibold">{{ featuredTestimonial.author.name }}</div>
+                <div class="text-gray-600">{{ `@${featuredTestimonial.author.handle}` }}</div>
+              </div>
+              <img class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="" />
+            </figcaption>
+          </figure>
+          <div v-for="(columnGroup, columnGroupIdx) in testimonials" :key="columnGroupIdx" class="space-y-8 xl:contents xl:space-y-0">
+            <div v-for="(column, columnIdx) in columnGroup" :key="columnIdx" :class="[(columnGroupIdx === 0 && columnIdx === 0) || (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1) ? 'xl:row-span-2' : 'xl:row-start-1', 'space-y-8']">
+              <figure v-for="testimonial in column" :key="testimonial.author.handle" class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+                <blockquote class="text-gray-900">
+                  <p>{{ `“${testimonial.body}”` }}</p>
+                </blockquote>
+                <figcaption class="mt-6 flex items-center gap-x-4">
+                  <img class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl" alt="" />
+                  <div>
+                    <div class="font-semibold">{{ testimonial.author.name }}</div>
+                    <div class="text-gray-600">{{ `@${testimonial.author.handle}` }}</div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
-</template>
+      </div>
+    </div>
+  </template>
+  
+  <script setup>
+  const featuredTestimonial = {
+    body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
+    author: {
+      name: 'Brenna Goyette',
+      handle: 'brennagoyette',
+      imageUrl:
+        'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
+      logoUrl: 'https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg',
+    },
+  }
+  const testimonials = [
+    [
+      [
+        {
+          body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+          author: {
+            name: 'Leslie Alexander',
+            handle: 'lesliealexander',
+            imageUrl:
+              'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          },
+        },
+        // More testimonials...
+      ],
+      [
+        {
+          body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+          author: {
+            name: 'Lindsay Walton',
+            handle: 'lindsaywalton',
+            imageUrl:
+              'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          },
+        },
+        // More testimonials...
+      ],
+    ],
+    [
+      [
+        {
+          body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
+          author: {
+            name: 'Tom Cook',
+            handle: 'tomcook',
+            imageUrl:
+              'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          },
+        },
+        // More testimonials...
+      ],
+      [
+        {
+          body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
+          author: {
+            name: 'Leonard Krasner',
+            handle: 'leonardkrasner',
+            imageUrl:
+              'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          },
+        },
+        // More testimonials...
+      ],
+    ],
+  ]
+  </script>
